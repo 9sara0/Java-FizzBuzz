@@ -2,7 +2,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class FizzBuzzTest {
-  
+
   FizzBuzz fizzBuzz = new FizzBuzz();
 
   @Test
@@ -18,5 +18,10 @@ public class FizzBuzzTest {
   @Test
   public void getResultShouldReturnFizzBuzzIfTheNumberIsDivisibleBy15() {
     assertEquals("FizzBuzz", fizzBuzz.getResult(15));
+  }
+
+  @Test
+  public void getResultShouldReturnNumberIfNotDivisibleBy3Or5() {
+    assertEquals("1", fizzBuzz.getResult(1));
   }
 }
