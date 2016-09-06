@@ -7,4 +7,10 @@ public class FizzBuzzTest {
     FizzBuzz fizzBuzz = new FizzBuzz();
     assertEquals("Fizz", fizzBuzz.getResult(3));
   }
+
+  @Test
+  public void getResultShouldReturnBuzzIfTheNumberIsDivisibleBy5() {
+    FizzBuzz fizzBuzz = new FizzBuzz();
+    assertEquals("Buzz", fizzBuzz.getResult(5));
+  }
 }
